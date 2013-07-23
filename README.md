@@ -27,8 +27,10 @@ micro168pa.bootloader.lock_bits=0x0F
 micro168pa.build.mcu=atmega168p
 micro168pa.build.f_cpu=8000000L
 micro168pa.build.core=arduino
+micro168pa.build.variant=standard
 
-После этого появится в меню выбора плат (3.3V, 8 int MHz) w/ ATmega168PA , ее и выбираем и для прошивки загрузчика и при загрузке скретча.
+После этого появится в меню выбора плат (3.3V, 8 int MHz) w/ ATmega168PA , ее и выбираем и для прошивки загрузчика.
+Для загрузки скетча можно выбирать кроме указанной и Arduino Pro or Pro Mini (3.3V, 8 MHz) w/ ATmega168.
 Пример измененного файла boards.txt есть в каталоге.
 
 В текущей папке представлен внешний вид модуля, файл печатной платы, схема модуля.
