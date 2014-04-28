@@ -123,7 +123,7 @@ static const byte ASCII[][5] ={
 unsigned char lcd_x = 0, lcd_y = 0;
 byte column=0; // cтолбец
 byte line=0; // строка
-byte contrast=4;
+byte contrast=10;
 
 
 unsigned int n=0;// определяет не пора ли менять шаг изменения частоты
@@ -140,7 +140,7 @@ unsigned int sval=0;//  накопительный замер рсси
 unsigned int RSSI = 0;// максимум АРУ
 unsigned int RSSImin = 0;
 unsigned int spec =0; // что будет отображаться в спектре
-byte MAXi = 0;// i при макс АРУ
+unsigned int MAXi = 0;// i при макс АРУ
 
 byte RSSI_por;
 byte RSSI_dev;
@@ -326,8 +326,8 @@ void setup()
       sval=0;
       RSSI=0; 
       for ( unsigned int i = 0; i < 459; i++){
-      Freguency = 890+i;
       if (i == 24) i = 90;
+      Freguency = 890+i;
       prog_freg();
       
   
